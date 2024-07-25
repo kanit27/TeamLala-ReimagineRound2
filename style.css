@@ -1,0 +1,681 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  overscroll-behavior: none;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.page1 {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.page1 .navbar {
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 111111;
+}
+
+.page1 .page1-video video {
+  width: 100%;
+  object-fit: cover;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.hero-text1 img {
+  width: 25vh;
+  margin-left: 15vh;
+}
+.ri-search-line {
+  margin-right: 15vh;
+  font-size: 3vh;
+}
+.ri-menu-4-line {
+  margin-left: 15vh;
+  font-size: 4vh;
+}
+.page2 {
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+}
+.page2 .page2-text {
+  padding: 10vh 20vh;
+  width: 100%;
+}
+.page2 .page2-text h1 {
+  width: 100%;
+  font-family: "Odibee Sans", sans-serif;
+  color: #fff;
+  font-size: 25vh;
+  margin-top: 25vh;
+}
+.page2 .page2-text h5 {
+  font-family: "Play", sans-serif;
+  font-weight: 300;
+  color: #fff;
+  font-size: 5vh;
+  margin-top: 5vh;
+}
+.page3 {
+  width: 100%;
+  height: 100vh;
+  /* background-color: #000000; */
+  position: relative;
+}
+.page3-container{
+  background-image: url(https://img.freepik.com/free-photo/modern-empty-room_23-2150528589.jpg?t=st=1721928161~exp=1721931761~hmac=8d5da914b099c7fcb038c74f4787914226adf9d40acc744519f69d58c7974981&w=1380);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+.page3-container .ri-arrow-left-wide-line{
+  font-size: 5vh;
+  padding-left: 5vh;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 3;
+  color: #fff;
+  cursor: pointer;
+}
+.page3-container .ri-arrow-right-wide-line{
+  font-size: 5vh;
+  padding-right: 5vh;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  z-index: 3;
+  color: #fff;
+  cursor: pointer;
+}
+.page3 .frame {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.page3 .slider{
+  display: flex;
+}
+.page3 img {
+  width: 100vh;
+  object-fit: cover;
+  position: absolute;
+  display: flex;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9;
+  transform-style: preserve-3d;
+}
+.page3 h1{
+  width: 100%;
+  position: absolute;
+  top: 38%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #ffffffbb;
+  font-family: "Odibee Sans", sans-serif;
+  font-size: 15vh;
+  z-index: 0;
+}
+.page3-content .cf-now{
+ padding: 1vh 3vh;
+ font-size: 20px;
+ font-weight: 600;
+ background-color: red;
+ border: none;
+ color: white;
+ font-family: "Raleway", sans-serif;
+ position: absolute;
+ top: 90%;
+ left: 40%;
+ cursor: pointer;
+}
+.page3-content .ex-now{
+ padding: 1vh 2vh;
+ font-size: 20px;
+ font-weight: 600;
+ background-color: white;
+ border: none;
+ color: rgb(0, 0, 0);
+ font-family: "Raleway", sans-serif;
+ position: absolute;
+ top: 90%;
+ left: 55%;
+ cursor: pointer;
+}
+.cards {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  animation: rot 10s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+.cards img {
+  display: none;
+  width: 50vh;
+}
+.rot {
+  transform: translate3d(0, 0, 0);
+  animation: rot 50s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+@keyframes rot {
+  0% {
+    background-image: url(Assests/brava-blue-001.avif);
+  }
+  1% {
+    background-image: url(Assests/brava-blue-002.avif);
+  }
+  2% {
+    background-image: url(Assests/brava-blue-003.avif);
+  }
+  3% {
+    background-image: url(Assests/brava-blue-004.avif);
+  }
+  4% {
+    background-image: url(Assests/brava-blue-005.avif);
+  }
+  5% {
+    background-image: url(Assests/brava-blue-006.avif);
+  }
+  6% {
+    background-image: url(Assests/brava-blue-007.avif);
+  }
+  7% {
+    background-image: url(Assests/brava-blue-008.avif);
+  }
+  8% {
+    background-image: url(Assests/brava-blue-009.avif);
+  }
+  9% {
+    background-image: url(Assests/brava-blue-010.avif);
+  }
+  10% {
+    background-image: url(Assests/brava-blue-011.avif);
+  }
+  11% {
+    background-image: url(Assests/brava-blue-012.avif);
+  }
+  12% {
+    background-image: url(Assests/brava-blue-013.avif);
+  }
+  13% {
+    background-image: url(Assests/brava-blue-014.avif);
+  }
+  14% {
+    background-image: url(Assests/brava-blue-015.avif);
+  }
+  15% {
+    background-image: url(Assests/brava-blue-016.avif);
+  }
+  16% {
+    background-image: url(Assests/brava-blue-017.avif);
+  }
+  17% {
+    background-image: url(Assests/brava-blue-018.avif);
+  }
+  18% {
+    background-image: url(Assests/brava-blue-019.avif);
+  }
+  19% {
+    background-image: url(Assests/brava-blue-020.avif);
+  }
+  20% {
+    background-image: url(Assests/brava-blue-021.avif);
+  }
+  21% {
+    background-image: url(Assests/brava-blue-022.avif);
+  }
+  22% {
+    background-image: url(Assests/brava-blue-023.avif);
+  }
+  23% {
+    background-image: url(Assests/brava-blue-024.avif);
+  }
+  24% {
+    background-image: url(Assests/brava-blue-025.avif);
+  }
+  25% {
+    background-image: url(Assests/brava-blue-026.avif);
+  }
+  26% {
+    background-image: url(Assests/brava-blue-027.avif);
+  }
+  27% {
+    background-image: url(Assests/brava-blue-028.avif);
+  }
+  28% {
+    background-image: url(Assests/brava-blue-029.avif);
+  }
+  29% {
+    background-image: url(Assests/brava-blue-030.avif);
+  }
+  30% {
+    background-image: url(Assests/brava-blue-031.avif);
+  }
+  31% {
+    background-image: url(Assests/brava-blue-032.avif);
+  }
+  32% {
+    background-image: url(Assests/brava-blue-033.avif);
+  }
+  33% {
+    background-image: url(Assests/brava-blue-034.avif);
+  }
+  34% {
+    background-image: url(Assests/brava-blue-035.avif);
+  }
+  35% {
+    background-image: url(Assests/brava-blue-036.avif);
+  }
+  36% {
+    background-image: url(Assests/brava-blue-001.avif);
+  }
+  37% {
+    background-image: url(Assests/brava-blue-002.avif);
+  }
+  38% {
+    background-image: url(Assests/brava-blue-003.avif);
+  }
+  39% {
+    background-image: url(Assests/brava-blue-004.avif);
+  }
+  40% {
+    background-image: url(Assests/brava-blue-005.avif);
+  }
+  41% {
+    background-image: url(Assests/brava-blue-006.avif);
+  }
+  42% {
+    background-image: url(Assests/brava-blue-007.avif);
+  }
+  43% {
+    background-image: url(Assests/brava-blue-008.avif);
+  }
+  44% {
+    background-image: url(Assests/brava-blue-009.avif);
+  }
+  45% {
+    background-image: url(Assests/brava-blue-010.avif);
+  }
+  46% {
+    background-image: url(Assests/brava-blue-011.avif);
+  }
+  47% {
+    background-image: url(Assests/brava-blue-012.avif);
+  }
+  48% {
+    background-image: url(Assests/brava-blue-013.avif);
+  }
+  49% {
+    background-image: url(Assests/brava-blue-014.avif);
+  }
+  50% {
+    background-image: url(Assests/brava-blue-015.avif);
+  }
+  51% {
+    background-image: url(Assests/brava-blue-016.avif);
+  }
+  52% {
+    background-image: url(Assests/brava-blue-017.avif);
+  }
+  53% {
+    background-image: url(Assests/brava-blue-018.avif);
+  }
+  54% {
+    background-image: url(Assests/brava-blue-019.avif);
+  }
+  55% {
+    background-image: url(Assests/brava-blue-020.avif);
+  }
+  56% {
+    background-image: url(Assests/brava-blue-021.avif);
+  }
+  57% {
+    background-image: url(Assests/brava-blue-022.avif);
+  }
+  58% {
+    background-image: url(Assests/brava-blue-023.avif);
+  }
+  59% {
+    background-image: url(Assests/brava-blue-024.avif);
+  }
+  60% {
+    background-image: url(Assests/brava-blue-025.avif);
+  }
+  61% {
+    background-image: url(Assests/brava-blue-026.avif);
+  }
+  62% {
+    background-image: url(Assests/brava-blue-027.avif);
+  }
+  63% {
+    background-image: url(Assests/brava-blue-028.avif);
+  }
+  64% {
+    background-image: url(Assests/brava-blue-029.avif);
+  }
+  65% {
+    background-image: url(Assests/brava-blue-030.avif);
+  }
+  66% {
+    background-image: url(Assests/brava-blue-031.avif);
+  }
+  67% {
+    background-image: url(Assests/brava-blue-032.avif);
+  }
+  68% {
+    background-image: url(Assests/brava-blue-033.avif);
+  }
+  69% {
+    background-image: url(Assests/brava-blue-034.avif);
+  }
+  70% {
+    background-image: url(Assests/brava-blue-035.avif);
+  }
+  71% {
+    background-image: url(Assests/brava-blue-036.avif);
+  }
+  72% {
+    background-image: url(Assests/brava-blue-001.avif);
+  }
+  73% {
+    background-image: url(Assests/brava-blue-002.avif);
+  }
+  74% {
+    background-image: url(Assests/brava-blue-003.avif);
+  }
+  75% {
+    background-image: url(Assests/brava-blue-004.avif);
+  }
+  76% {
+    background-image: url(Assests/brava-blue-005.avif);
+  }
+  77% {
+    background-image: url(Assests/brava-blue-006.avif);
+  }
+  78% {
+    background-image: url(Assests/brava-blue-007.avif);
+  }
+  79% {
+    background-image: url(Assests/brava-blue-008.avif);
+  }
+  80% {
+    background-image: url(Assests/brava-blue-009.avif);
+  }
+  81% {
+    background-image: url(Assests/brava-blue-010.avif);
+  }
+  82% {
+    background-image: url(Assests/brava-blue-011.avif);
+  }
+  83% {
+    background-image: url(Assests/brava-blue-012.avif);
+  }
+  84% {
+    background-image: url(Assests/brava-blue-013.avif);
+  }
+  85% {
+    background-image: url(Assests/brava-blue-014.avif);
+  }
+  86% {
+    background-image: url(Assests/brava-blue-015.avif);
+  }
+  87% {
+    background-image: url(Assests/brava-blue-016.avif);
+  }
+  88% {
+    background-image: url(Assests/brava-blue-017.avif);
+  }
+  89% {
+    background-image: url(Assests/brava-blue-018.avif);
+  }
+  90% {
+    background-image: url(Assests/brava-blue-019.avif);
+  }
+  91% {
+    background-image: url(Assests/brava-blue-020.avif);
+  }
+  92% {
+    background-image: url(Assests/brava-blue-021.avif);
+  }
+  93% {
+    background-image: url(Assests/brava-blue-022.avif);
+  }
+  94% {
+    background-image: url(Assests/brava-blue-023.avif);
+  }
+  95% {
+    background-image: url(Assests/brava-blue-024.avif);
+  }
+  96% {
+    background-image: url(Assests/brava-blue-025.avif);
+  }
+  97% {
+    background-image: url(Assests/brava-blue-026.avif);
+  }
+  98% {
+    background-image: url(Assests/brava-blue-027.avif);
+  }
+  99% {
+    background-image: url(Assests/brava-blue-028.avif);
+  }
+  100% {
+    background-image: url(Assests/brava-blue-029.avif);
+  }
+}
+.page4{
+  width: 100%;
+  height: 400vh;
+  position: relative;
+  background-color: #000;
+  overflow-x: hidden;
+}
+.page4-content{
+ position: relative;
+ width: 100%;
+ height: 400vh;
+
+}
+#fixed{
+  position: fixed;
+  top: 50%;
+  left: 40%;
+  display: none;
+ color: #ffffffbb;
+ z-index: 1;
+ font-size: 25vh;
+ padding-top: 15vh;
+ font-family: "Odibee Sans", sans-serif;
+}
+
+.wrapper{
+    width: 400vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    will-change: transform;
+    z-index: 2;
+}
+.card{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+
+}
+.card1 {
+  width: 60vh;
+  height: 30vh;
+  top: 40%;
+  left: 10%;
+}
+.card2 {
+  width: 60vh;
+  height: 30vh;
+  top: 50%;
+  left: 25%;
+}
+.card3 {
+  width: 60vh;
+  height: 30vh;
+  top: 60%;
+  left: 40%;
+}
+.card4 {
+  width: 60vh;
+  height: 30vh;
+  top: 60%;
+  left: 55%;
+}
+.card5 {
+  width: 60vh;
+  height: 30vh;
+  top: 60%;
+  left: 70%;
+}
+.card6 {
+  width: 60vh;
+  height: 30vh;
+  top: 60%;
+  left: 85%;
+}
+.card7 {
+  width: 60vh;
+  height: 30vh;
+  top: 60%;
+  left: 100%;
+}
+.card8 {
+  width: 60vh;
+  height: 30vh;
+  top: 60%;
+  left: 115%;
+}
+.wrapper .card video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.page7{
+  width: 100%;
+  height: 155vh;
+  position: relative;
+  background-color: #000;
+  color: #fff;
+  /* margin-top: 10vh; */
+}
+h1 { 
+  font-size: 25vh; 
+  position: relative;
+  left: 60%;
+  top: 57%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  margin: 0;
+  color: white;
+  font-family: "Odibee Sans", sans-serif;
+  font-weight: 500;
+}
+.page7 p{ 
+  font-size: 5vh; 
+  position: relative;
+  left: 60%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  margin: 0;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+}
+section {
+  /* padding-top: 10vh; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 100vh;
+  margin: 0 auto;
+}
+.gallery {
+  height: 150vh;
+  background-color: #000;
+}
+
+.img {
+  width: 100%;
+  height: 700px;
+  position: relative;
+  background-size: cover;
+  background-color: #000;
+  z-index: 1;
+
+  &:nth-of-type(1) {background-image: url('https://www.royalenfield.com/content/dam/royal-enfield/india/custom-builder/Builders/tnt-motorcycles/shunya/shunya-1.jpg'); background-position: center; background-size: cover;}
+  &:nth-of-type(2) {background-image: url('https://www.royalenfield.com/content/dam/royal-enfield/india/custom-builder-portal/custom-news/featured-builds/mobile/scrumbler-riccochet.jpg');  background-position: center; background-size: cover;}
+  &:nth-of-type(3) {background-image: url('https://www.royalenfield.com/content/dam/royal-enfield/india/custom-builder-portal/jedi-customs/gallery/classic/cillus-2.jpg');  background-position: center; background-size: cover;}
+  &:nth-of-type(4) {background-image: url('https://www.royalenfield.com/content/dam/royal-enfield/india/custom-builder-portal/mean-green-customs/gallery/akaalya/akaalya-3.jpg');  background-position: center; background-size: cover;}
+  &:nth-of-type(5) {background-image: url('https://www.royalenfield.com/content/dam/royal-enfield/india/custom-builder-portal/mean-green-customs/gallery/nevermore/nevermore-10.jpg');  background-position: center; background-size: cover;}
+  &:nth-of-type(6) {background-image: url('https://www.royalenfield.com/content/dam/royal-enfield/india/custom-builder-portal/bombay-custom-works/gallery/barood/bullet-barood-3.jpg'); background-position: center; background-size: cover;}
+  &:nth-of-type(7) {background-image: url('https://www.royalenfield.com/content/dam/royal-enfield/india/custom-builder-portal/bulleteer-customs/gallery/cafe-racers/cafe-racer-1.jpg');  background-position: center; background-size: cover;}
+  &:nth-of-type(8) {background-image: url('https://www.royalenfield.com/content/dam/royal-enfield/india/custom-builder/Builders/tnt-motorcycles/the-anchor/the-anchor-2.jpg');  background-position: center; background-size: cover;}
+  &:nth-of-type(9) {background-image: url('https://www.royalenfield.com/content/dam/royal-enfield/india/custom-builder-portal/eimor-customs/gallery/bullet-ci/graduate-2.jpg');  background-position: center; background-size: cover;}
+
+
+  &:before {
+      content: '';
+      position: absolute;
+      height: 100vh;
+      width: 100%;
+      z-index: 4;
+      top: 0;
+      left: 0;
+      border-right: 1px solid black;
+  }
+}
+
+.line {
+  border-right: 1px solid black;
+}
+footer{
+  width: 100%;
+  height: 25vh;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20vh;
+
+}
+footer h4{
+  color: #fff;
+  font-family: 'Raleway';
+  font-size: 1.5vh;
+  cursor: pointer;
+  
+}
+footer img{
+  cursor: pointer;
+  width: 100px;
+}
